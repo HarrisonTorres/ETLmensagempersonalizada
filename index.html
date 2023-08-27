@@ -19,17 +19,17 @@
        </button>
        
      </div>
-     <div class="video" style="display: none;">
-        <iframe width="560" height="315" src="http://www.youtube.com/watch?v=-VEUWrmVsQ4" frameborder="0" allowfullscreen></iframe>
-    </div>
      <script>
         // Definir o elemento do botão
         const button = document.querySelector(".buttonNao");
         const buttonSim = document.querySelector(".buttonSim");
         const video = document.querySelector(".video");
         buttonSim.addEventListener("click", function() {
-          video.style.display = "flex";
-          
+          // Obter o URL do site
+            const siteURL = "https://www.youtube.com/watch?v=-VEUWrmVsQ4";
+
+            // Redirecionar para o site
+            window.location.href = siteURL;
         });
 
         // Definir a função de evento "mouseenter"      
